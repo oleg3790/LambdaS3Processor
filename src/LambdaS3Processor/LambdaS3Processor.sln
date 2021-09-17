@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaS3Processor", "LambdaS3Processor\LambdaS3Processor.csproj", "{C5C06FA2-058E-48FA-A6C5-B95766CDA5B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5C06FA2-058E-48FA-A6C5-B95766CDA5B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C06FA2-058E-48FA-A6C5-B95766CDA5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C06FA2-058E-48FA-A6C5-B95766CDA5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5C06FA2-058E-48FA-A6C5-B95766CDA5B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A08033D6-7F98-4ED7-84E2-ED342A401522}
+	EndGlobalSection
+EndGlobal

@@ -17,7 +17,7 @@ EOF
 }
 
 resource "aws_iam_role_policy_attachment" "lambda_basic_policy" {
-  role        = aws_iam_role.processor_role.arn
+  role        = aws_iam_role.processor_role.name
   policy_arn  = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
 }
 
@@ -25,6 +25,6 @@ resource "aws_lambda_function" "processor_lambda" {
   filename      = "../payload/LambdaS3Processor.zip"
   function_name = "LambdaS3Processor"
   role          = aws_iam_role.processor_role.arn
-  handler       = "FunctionHandler"
+  handler       = "LambdaS3Processor::LambdaS3Processor.Function::FunctionHandler"
   runtime       = "dotnetcore3.1"
 }

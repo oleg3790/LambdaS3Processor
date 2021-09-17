@@ -22,7 +22,7 @@ resource "aws_iam_role_policy_attachment" "lambda_basic_policy" {
 }
 
 resource "aws_lambda_function" "processor_lambda" {
-  filename      = "../payload/function.zip"
+  filename      = "../payload/LambdaS3Processor.zip"
   function_name = "LambdaS3Processor"
   role          = aws_iam_role.processor_role.arn
   handler       = "FunctionHandler"

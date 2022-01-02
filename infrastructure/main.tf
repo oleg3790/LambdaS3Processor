@@ -1,5 +1,5 @@
 resource "aws_iam_role" "processor_role" {
-  name                = "lambda-s3-procesor-role"
+  name                = "lambda-s3-processor-role"
   assume_role_policy  = <<EOF
 {
   "Version": "2012-10-17",

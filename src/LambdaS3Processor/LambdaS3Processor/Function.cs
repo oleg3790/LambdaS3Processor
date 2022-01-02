@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-
 using Amazon.Lambda.Core;
 using Amazon.Lambda.SNSEvents;
 
@@ -12,7 +8,7 @@ using Amazon.Lambda.SNSEvents;
 
 namespace LambdaS3Processor
 {
-    public class Function
+  public class Function
     {
         /// <summary>
         /// Default constructor. This constructor is used by Lambda to construct the instance. When invoked in a Lambda environment

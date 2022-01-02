@@ -28,3 +28,11 @@ resource "aws_lambda_function" "processor_lambda" {
   handler       = "LambdaS3Processor::LambdaS3Processor.Function::FunctionHandler"
   runtime       = "dotnetcore3.1"
 }
+
+resource "aws_lambda_permission" "s3_processor_sns" {
+  statement_id  = "AllowExecutionFromSNS"
+  action        = "lambda:InvokeFunction"
+  function_name = aws_lambda_function.processor_lambda.function_name
+  principal     = "sns.amazonaws.com"
+  source_arn    = aws_sns_topic.s3_processor_topic.arn
+}

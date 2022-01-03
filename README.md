@@ -1,3 +1,5 @@
+Lambda configured to process object creation/removal events from S3 using SNS.
+
 ### Building Payload Package
 This sample project is configured to be deployed as a zip. In order to build a deployment package you'll need the `Amazon.Lambda.Tools` .NET CLI tool. You can install it using:
 
